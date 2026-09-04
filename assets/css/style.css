@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav, footer {
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+}
+nav a {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav li:hover {
+    background: white;
+    color: antiquewhite;
+}
+nav li:hover a {
+    color: black;
+}
