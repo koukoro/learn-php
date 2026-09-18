@@ -165,4 +165,39 @@ if (empty($a)) {
 // Уничтожение переменных
 unset($a);
 // echo $a; - выдаст ошибку, так как переменной а не существует
+
+echo "<h2>Операции с массивами</h2><br>";
+
+$users = ["Иван", "Кирилл", "Станислав", "Максим", "Сергей", "Егор", "Даниил", "Данил", "Никита"];
+
+// Проверка переменной, что она массив
+echo (is_array($users)) ? "<p>Да, это массив</p>" : "<p>Нет, это не массив</p>";
+
+// Размер массива
+echo "<p>В массива USERS" . count($users) . " элементов</p>";
+echo "<p>В массива USERS" . sizeof($users) . " элементов</p>";
+
+shuffle($users);
+print_r($users);
+
+// Сбор набора переменных в ассоциативный массив
+$color = "black";
+$year = 2026;
+$game = "Minecraft";
+$data = compact('color', 'year', 'game');
+echo "<br><br>"; print_r($data);
+
+// Сортировка массива по возрастанию
+asort($users);
+echo "<br><br>"; print_r($users);
+
+// Сортировка массива по убыванию
+arsort($users);
+echo "<br><br>"; print_r($users);
+
+// Сортировка массива по ключам
+ksort($data);
+echo "<br><br>"; print_r($data);
+
+$os = ["Windows 7", "Windows 8", "Windows 8.1", "Windows XP", "Windows 10", "Windows 11"];
 ?>

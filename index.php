@@ -15,6 +15,10 @@
             <li><a href="index.php">Главная</a></li>
             <li><a href="index.php?p=fundamentals_syntax">Основы синтаксиса</a></li>
             <li><a href="index.php?p=massive">Массивы</a></li>
+            <li><a href="index.php?p=form_processing">Отправка данных на сервер</a></li>
+            <li><a href="index.php?p=undependent_work">Самостоятельные работы</a></li>
+            <li><a href="index.php?p=form">Форма</a></li>
+            <li><a href="index.php?p=if_else">Конструкция if else и switch</a></li>
         </ul>
     </nav>
 </header>
